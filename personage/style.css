@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    background: #08c6ff;
+    background: -webkit-linear-gradient(to right, #0072ff, #08c6ff);
+
+    background: linear-gradient(to right, #0072ff, #08c6ff);
+
+    height: 350px;
+    width: 600px;
+    border-radius: 12px;
+    position: relative;
+
+    
+    
+}
+
+img{
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(65%);
+    z-index: 1;
+    transition: .5s;
+}
+
+
+.container:hover img{
+    transform: translate(385px,-40px) scale(1.2);
+}
+
+.content{
+    position: relative;
+    width: 50%;
+    top: 20%;
+    left: 8%;
+    color: mintcream;
+    transform: translate(40%);
+    opacity: 0;
+    transition: .5s;
+}
+
+.container:hover .content{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+}
+
+
+.content a{
+    display: inline-block;
+    height: 45px;
+    width: 125px;
+    text-decoration: none;
+    background-color: mintcream;
+    border: 2px solid mintcream;
+    border-radius: 7px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 9px;
+    margin-top: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2.4rem;
+    font-family: sans-serif;
+}
+
+@media(max-width: 911px){
+    img{
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .container{
+        width: auto;
+        max-width: 600px;
+        position: relative;
+        transition: .5s;
+        margin: 2%;
+    }
+    .container:hover{
+        height: 600px;
+    }
+    .container:hover img{
+        transform: translate(-140px, 0%);
+    }
+
+    .content {
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        top: 0;
+        transform: translate(0);
+    }
+}
+
+@media(max-width: 420px){
+    .container:hover img {
+        height: 50%;
+        transform: translate(-108px, 0%);
+    }
+}
