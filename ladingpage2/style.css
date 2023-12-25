@@ -132,3 +132,10 @@ color: #fff;
     display: block;
     margin: 0 auto;
 }
+
+.copyright{
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(181, 175, 175);
+}
