@@ -89,3 +89,10 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+.copyright{
+    font-size: 14px;
+    margin-top: -18px;
+    text-align: center;
+    color: rgb(181, 175, 175);
+}
